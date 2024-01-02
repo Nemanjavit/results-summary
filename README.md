@@ -1,4 +1,9 @@
 # Frontend Mentor - Results summary component solution
+Desktop:
+![Screenshot 2024-01-02 at 12-38-08 React App](https://github.com/Nemanjavit/results-summary/assets/56551956/2b5df786-2ba8-4aa4-bb7d-dafbdb855f4d)
+
+Mobile:
+![Screenshot 2024-01-02 at 12-39-03 React App](https://github.com/Nemanjavit/results-summary/assets/56551956/868da706-a694-4456-ac5e-f06aaf1ee366)
 
 This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
@@ -27,7 +32,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL:https://results-summary-virid.vercel.app/
 
 ## My process
 
