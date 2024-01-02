@@ -1,0 +1,162 @@
+@import "./reset";
+@import "./fonts";
+@import "./variables";
+@import "./functions";
+
+#root {
+  height: 100vh;
+}
+
+.App {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  font-family: "HankenGrotesk", sans-serif;
+}
+
+.result-summary {
+  width: 100%;
+  max-width: 46rem;
+  border-radius: 2rem;
+  box-shadow: 0.5rem 1rem 3rem hslac($darkGreyBlue, 0.2);
+}
+
+.left {
+  display: flex;
+  border-radius: 0 0 2rem 2rem;
+  align-items: center;
+  padding: $padding-lg;
+  flex-direction: column;
+  justify-content: center;
+  color: hslac($white, 0.4);
+  background: linear-gradient($lightStateBlue, $lightRoyalBlue);
+}
+
+.heading {
+  font-size: $m-font-size;
+  font-weight: 700;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  margin: 45px 0;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient($violetBlue, $persianBlue);
+
+  .value {
+    color: $white;
+    display: block;
+    font-weight: 900;
+    font-size: $xxl-font-size;
+  }
+}
+
+.result-rank {
+  color: $white;
+  font-weight: 700;
+  font-size: $lg-font-size;
+}
+
+.rank-text {
+  max-width: 245px;
+  margin-top: 1.5rem;
+}
+
+.right {
+  padding: $padding-lg;
+}
+
+.summary.heading {
+  text-align: start;
+}
+
+.summary-attributes {
+  gap: 1rem;
+  display: flex;
+  margin: 2.25rem 0;
+  flex-direction: column;
+}
+
+.summary-attribute {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  font-size: $xs-font-size;
+
+  .name {
+    flex-grow: 1;
+    margin: 0 1rem;
+    text-align: start;
+  }
+
+  .value {
+    font-weight: 700;
+    color: hslac($darkGreyBlue, 0.5);
+
+    span {
+      margin-right: 0.5rem;
+      color: $darkGreyBlue;
+    }
+  }
+}
+
+.button {
+  border: 0;
+  width: 100%;
+  color: $white;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border-radius: 100vw;
+  font-size: $xs-font-size;
+  background-color: $darkGreyBlue;
+  font-family: "HankenGrotesk", sans-serif;
+
+  &:hover {
+    background: linear-gradient($lightStateBlue, $lightRoyalBlue);
+  }
+}
+
+.blue {
+  background-color: hslac($cobaltBlue, 0.1);
+  .name {
+    color: $cobaltBlue;
+  }
+}
+
+.red {
+  background-color: hslac($lighRed, 0.1);
+  .name {
+    color: $lighRed;
+  }
+}
+
+.orange {
+  background-color: hslac($orangeyYellow, 0.1);
+  .name {
+    color: $orangeyYellow;
+  }
+}
+
+.green {
+  background-color: hslac($greenTeal, 0.1);
+  .name {
+    color: $greenTeal;
+  }
+}
+
+@media (min-width: 600px) {
+  .result-summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .left {
+    border-radius: 2rem;
+  }
+}
